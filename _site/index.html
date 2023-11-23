@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="/assets/css/styles.css">
         <title>Paulo Roberto</title> 
     </head>
-    <body>
+    <body class="dark">
         <header>
     <nav>
         
@@ -18,14 +18,23 @@
         
         <li><a href="/about.html">About</a></li>
         
+        <button onclick="switch_theme()">
+            Switch Theme
+        </button>
     </nav>
 </header>
 
         In construction
+
+<script>
+    localStorage.setItem('mode_prpc_github_io', 'light');
+</script>
 
         <footer>
     Footer
 </footer>
 
     </body>
+    
+    <script src="/assets/js/index.js"></script>
 </html>

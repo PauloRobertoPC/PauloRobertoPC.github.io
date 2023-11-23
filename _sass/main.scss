@@ -1,5 +1,18 @@
-body{
-    background-color: #131418;
-    color: white;
+// dark variables
+$background-color-dark: #131418;
+$color-dark: white;
+
+// light variables
+$background-color-light: white;
+$color-light: black;
+
+
+body.dark{
+    background-color: $background-color-dark;
+    color: $color-dark;
 }
 
+body.light{
+    background-color: $background-color-light;
+    color: $color-light;
+}

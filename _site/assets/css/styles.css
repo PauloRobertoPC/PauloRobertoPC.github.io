@@ -1,6 +1,11 @@
-body {
+body.dark {
   background-color: #131418;
   color: white;
+}
+
+body.light {
+  background-color: white;
+  color: black;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -3,5 +3,8 @@
         {% for item in site.data.navigation %}
         <li><a href="{{ item.url }}">{{ item.name }}</a></li>
         {% endfor %}
+        <button onclick="switch_theme()">
+            Switch Theme
+        </button>
     </nav>
 </header>
