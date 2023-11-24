@@ -3,9 +3,9 @@
         <ul id="menu_top">
             {% for item in site.data.navigation %}
             <li>
-                <a href="{{ item.url }}">
+                <a href="{{ item.url }}" {% if page.url==item.url %} class="current_page" {% endif %}>
                     <div class="menu_item">
-                        <img src ="{{ item.img }}" class="icon_menu {% if item.svg %} dark {% endif %}"/>
+                        <img src ="{{ item.img }}" class="icon_menu {% if item.svg %} dark {% endif %}" {% if page.url==item.url %} style="opacity:1.0;" {% endif %}/>
                         {{ item.name }}
                     </div>
                 </a>

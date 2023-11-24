@@ -50,6 +50,8 @@ table {
 
 body {
   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 body.dark {
@@ -70,7 +72,8 @@ header {
 
 #main_section {
   margin-left: 70px;
-  padding-left: 10px;
+  padding: 20px 10px 20px 10px;
+  flex-grow: 1;
 }
 
 nav {
@@ -95,6 +98,17 @@ nav {
 
 .menu a {
   text-decoration: none;
+  color: inherit;
+  opacity: 0.8;
+}
+
+.menu a:hover {
+  opacity: 1;
+}
+
+.menu a.current_page {
+  opacity: 1;
+  text-decoration: underline;
 }
 
 #menu_top {
@@ -123,6 +137,20 @@ nav {
 
 img.dark {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(43deg) brightness(105%) contrast(102%);
+}
+
+img.icon_general {
+  height: 25px;
+  width: 25px;
+}
+
+footer {
+  padding: 0px 0px 10px 0px;
+  margin-left: 70px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

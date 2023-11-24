@@ -55,6 +55,8 @@ $color-light: black;
 
 body{
     display: flex;
+    flex-direction: column;
+    min-height: 100vh
 }
 
 body.dark{
@@ -75,7 +77,8 @@ header{
 
 #main_section{
     margin-left: $menu_width;
-    padding-left: 10px;
+    padding: 20px 10px 20px 10px; //top, left, bottom, right
+    flex-grow: 1;
 }
 
 nav{
@@ -101,6 +104,17 @@ nav{
 
 .menu a {
     text-decoration: none;
+    color: inherit;
+    opacity: 0.8
+}
+
+.menu a:hover {
+    opacity: 1.0;
+}
+
+.menu a.current_page{
+    opacity: 1.0;
+    text-decoration: underline;
 }
 
 #menu_top{
@@ -112,11 +126,8 @@ nav{
 }
 
 .icon_menu{
-    // width: 40px;
-    // min-height: 40px;
     height: 40px;
     opacity: 0.8;
-    // height: 40px;
 }
 
 .icon_menu:hover{
@@ -127,16 +138,25 @@ nav{
     display: flex;
     flex-direction: column;
     width: $menu_width;
-    // justify-items: center;
-    // justify-content: center;
     align-items: center;
-
 }
-
-// #bright_switcher.dark{
-//     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(43deg) brightness(105%) contrast(102%);
-// }
 
 img.dark{
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(43deg) brightness(105%) contrast(102%);
 }
+
+img.icon_general{
+    height: 25px;
+    width: 25px;
+}
+
+footer{
+    padding: 0px 0px 10px 0px; //top, left, bottom, right
+    margin-left: $menu_width;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
