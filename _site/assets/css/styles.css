@@ -48,19 +48,128 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 100;
+  font-style: normal;
+  src: url("/assets/fonts/Montserrat-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 100;
+  font-style: italic;
+  src: url("/assets/fonts/Montserrat-ThinItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-style: normal;
+  src: url("/assets/fonts/Montserrat-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-style: italic;
+  src: url("/assets/fonts/Montserrat-ExtraLightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-style: normal;
+  src: url("/assets/fonts/Montserrat-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-style: italic;
+  src: url("/assets/fonts/Montserrat-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-style: italic;
+  src: url("/assets/fonts/Montserrat-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  src: url("/assets/fonts/Montserrat-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-style: italic;
+  src: url("/assets/fonts/Montserrat-MediumItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: normal;
+  src: url("/assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: italic;
+  src: url("/assets/fonts/Montserrat-SemiBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/assets/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-style: italic;
+  src: url("/assets/fonts/Montserrat-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-style: normal;
+  src: url("/assets/fonts/Montserrat-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 800;
+  font-style: italic;
+  src: url("/assets/fonts/Montserrat-ExtraBoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-style: normal;
+  src: url("/assets/fonts/Montserrat-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 900;
+  font-style: italic;
+  src: url("/assets/fonts/Montserrat-BlackItalic.ttf") format("truetype");
+}
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: "Montserrat Light", sans-serif; /* Apply the Montserrat font family to the body */
 }
 
 body.dark {
-  background-color: #131418;
+  background-color: #252526;
   color: white;
 }
 
 body.light {
-  background-color: white;
+  background-color: #F5F7F8;
   color: black;
 }
 
@@ -70,7 +179,7 @@ header {
   position: fixed;
 }
 
-#main_section {
+#main_content {
   margin-left: 70px;
   padding: 20px 10px 20px 10px;
   flex-grow: 1;
@@ -82,6 +191,14 @@ nav {
   justify-content: space-between;
   height: 100vh;
   box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+nav.dark {
+  background-color: #2D2D30;
+}
+
+nav.light {
+  background-color: #FFFBF5;
 }
 
 .menu ul {
@@ -145,12 +262,20 @@ img.icon_general {
 }
 
 footer {
-  padding: 0px 0px 10px 0px;
+  padding: 30px 0px 10px 0px;
   margin-left: 70px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#footer_content {
+  padding-bottom: 10px;
+}
+
+#footer_copyright {
+  font-size: 13px;
 }
 
 /*# sourceMappingURL=styles.css.map */
