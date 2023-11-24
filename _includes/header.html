@@ -1,10 +1,23 @@
 <header>
-    <nav>
-        {% for item in site.data.navigation %}
-        <li><a href="{{ item.url }}">{{ item.name }}</a></li>
-        {% endfor %}
-        <button onclick="switch_theme()">
-            Switch Theme
-        </button>
+    <nav class="menu">
+        <ul id="menu_top">
+            {% for item in site.data.navigation %}
+            <li>
+                <a href="{{ item.url }}">
+                    <div class="menu_item">
+                        <img src ="{{ item.img }}" class="icon_menu {% if item.svg %} dark {% endif %}"/>
+                        {{ item.name }}
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        <ul id="menu_bottom">
+            <li>
+                <div class="menu_item">
+                    <img src="/assets/image/bright_switch.svg" id="bright_switcher" class="icon_menu dark" onclick="switch_theme()">
+                </div>
+            </li>
+        </ul>
     </nav>
 </header>

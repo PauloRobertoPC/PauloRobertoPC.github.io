@@ -1,18 +1,26 @@
 [
     {
         name: Home, 
+        svg: false,
+        img: /assets/image/ray_casting.png,
         url: /
     },
     {
         name: Projects, 
+        svg: false,
+        img: /assets/image/walle.png,
         url: /projects.html
     },
     {
         name: Blog, 
+        svg: true,
+        img: /assets/image/artificial_neuron.svg,
         url: /blog.html
     },
     {
         name: About, 
+        svg: false,
+        img: /assets/image/bar_chart.svg,
         url: /about.html
     }
 ]

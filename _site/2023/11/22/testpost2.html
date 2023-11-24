@@ -8,33 +8,68 @@
     </head>
     <body class="dark">
         <header>
-    <nav>
-        
-        <li><a href="/">Home</a></li>
-        
-        <li><a href="/projects.html">Projects</a></li>
-        
-        <li><a href="/blog.html">Blog</a></li>
-        
-        <li><a href="/about.html">About</a></li>
-        
-        <button onclick="switch_theme()">
-            Switch Theme
-        </button>
+    <nav class="menu">
+        <ul id="menu_top">
+            
+            <li>
+                <a href="/">
+                    <div class="menu_item">
+                        <img src ="/assets/image/ray_casting.png" class="icon_menu "/>
+                        Home
+                    </div>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/projects.html">
+                    <div class="menu_item">
+                        <img src ="/assets/image/walle.png" class="icon_menu "/>
+                        Projects
+                    </div>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/blog.html">
+                    <div class="menu_item">
+                        <img src ="/assets/image/artificial_neuron.svg" class="icon_menu  dark "/>
+                        Blog
+                    </div>
+                </a>
+            </li>
+            
+            <li>
+                <a href="/about.html">
+                    <div class="menu_item">
+                        <img src ="/assets/image/bar_chart.svg" class="icon_menu "/>
+                        About
+                    </div>
+                </a>
+            </li>
+            
+        </ul>
+        <ul id="menu_bottom">
+            <li>
+                <div class="menu_item">
+                    <img src="/assets/image/bright_switch.svg" id="bright_switcher" class="icon_menu dark" onclick="switch_theme()">
+                </div>
+            </li>
+        </ul>
     </nav>
 </header>
 
-        <h1>Testpost2</h1>
+        <section id="main_section">
+            <h1>Testpost2</h1>
 <p>22 Nov 2023</p>
 
 Just a post to test
 
 
+        </section>
         <footer>
     Footer
 </footer>
 
     </body>
-    
     <script src="/assets/js/index.js"></script>
 </html>
