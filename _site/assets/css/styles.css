@@ -173,6 +173,15 @@ body.light {
   color: black;
 }
 
+a {
+  color: inherit;
+  opacity: 0.8;
+}
+
+a:hover {
+  opacity: 1;
+}
+
 header {
   width: 70px;
   min-width: 70px;
@@ -182,6 +191,16 @@ header {
 #main_content {
   margin-left: 70px;
   padding: 20px 10px 20px 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#center_content {
+  margin-top: 30px;
+  max-width: 850px;
+  width: 100%;
   flex-grow: 1;
 }
 
@@ -276,6 +295,60 @@ footer {
 
 #footer_copyright {
   font-size: 13px;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-size: 18px;
+}
+
+#home1 {
+  margin-bottom: 15px;
+}
+
+#home2 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+#home2 p {
+  margin-bottom: 20px;
+}
+
+#ul-home {
+  margin-left: 40px;
+  list-style: disc;
+}
+
+#ul-home li {
+  margin-top: 10px;
+}
+
+.h1-home {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.h2-home {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.tooltip {
+  border-bottom: 2px dotted;
+  opacity: 0.8;
+}
+
+.tooltip:hover {
+  opacity: 1;
+}
+
+.home-spacer {
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
